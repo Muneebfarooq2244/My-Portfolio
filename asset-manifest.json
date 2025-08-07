@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/My-Portfolio/static/css/main.85eecb7f.css",
+    "main.js": "/My-Portfolio/static/js/main.18a6e9b7.js",
+    "static/media/hero.png": "/My-Portfolio/static/media/hero.4ffc9a5ab7930a974234.png",
+    "static/media/boxicons.svg": "/My-Portfolio/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
+    "static/media/About.png": "/My-Portfolio/static/media/About.775e8162c4a7c94c2259.png",
+    "static/media/boxicons.eot": "/My-Portfolio/static/media/boxicons.65a8ce52fc5427e8f94d.eot",
+    "static/media/testimonials3.jpg": "/My-Portfolio/static/media/testimonials3.a0d0759ffa612e2c4f25.jpg",
+    "static/media/boxicons.woff": "/My-Portfolio/static/media/boxicons.d12afc36557395143e4b.woff",
+    "static/media/boxicons.ttf": "/My-Portfolio/static/media/boxicons.db9ddb1898dbd76badca.ttf",
+    "static/media/resume.pdf": "/My-Portfolio/static/media/resume.039e3917d742ce910885.pdf",
+    "static/media/support.png": "/My-Portfolio/static/media/support.1cd59b0c31092e1fac17.png",
+    "static/media/work3 .png": "/My-Portfolio/static/media/work3 .81736ecabd700760e6e0.png",
+    "static/media/boxicons.woff2": "/My-Portfolio/static/media/boxicons.df635aaf04cd75132f62.woff2",
+    "static/media/Backend.png": "/My-Portfolio/static/media/Backend.a7e650e62313c2be415e.png",
+    "static/media/Fullstack.png": "/My-Portfolio/static/media/Fullstack.aefaa1af7e9ca536ca0e.png",
+    "static/media/work1.png": "/My-Portfolio/static/media/work1.8c1f780e25697ed57a17.png",
+    "static/media/work2.png": "/My-Portfolio/static/media/work2.f9491417602db4459571.png",
+    "static/media/Frontend.png": "/My-Portfolio/static/media/Frontend.8a5be1ecee8c0d44ec22.png",
+    "static/media/logo.png": "/My-Portfolio/static/media/logo.e0bc9044bc720ace8f49.png",
+    "static/media/testimonials1.jpg": "/My-Portfolio/static/media/testimonials1.0899b6de092313fe15ad.jpg",
+    "index.html": "/My-Portfolio/index.html",
+    "main.85eecb7f.css.map": "/My-Portfolio/static/css/main.85eecb7f.css.map",
+    "main.18a6e9b7.js.map": "/My-Portfolio/static/js/main.18a6e9b7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85eecb7f.css",
+    "static/js/main.18a6e9b7.js"
+  ]
+}
