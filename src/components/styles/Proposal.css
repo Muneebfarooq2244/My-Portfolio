@@ -1,0 +1,98 @@
+
+
+.dark-theme {
+  --bg-gradient: linear-gradient(135deg, #1a1a1a, #555555);
+}
+
+
+
+
+.Gradientbg {
+  background: var(--bg-gradient, linear-gradient(280deg, rgb(189, 189, 189), rgb(247, 247, 247)));
+  border-radius: 20px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.proposal {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2rem;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.textBox {
+  flex: 1;
+  min-width: 280px;
+  z-index: 2;
+}
+
+.textBox span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: block;
+  color: var(--text-color);
+}
+
+.textBox h3 {
+  margin-top: 5px;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.text3{
+  font-size: 17px;
+}
+
+
+.btn5 {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(280deg, #133333 0%, #006666 51%, #00cfcf 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  border: none;
+  margin-top: 10px;
+}
+
+.btn5:hover {
+  background: linear-gradient(280deg, #00cfcf 0%, #006666 51%, #133333 100%);
+  color: #fff;
+  transform: translateY(-6px);
+}
+
+.image {
+  flex: 1;
+  max-width: 40vw;
+  height: auto;
+  margin-top: -3rem;
+  margin-bottom: -2rem;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .proposal {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .image {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+
+  .textBox h3 {
+    font-size: 28px;
+  }
+  .text3{
+  font-size: 15px;
+}
+}

@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+/* === Theme Variables === */
+
+/* Light mode (default) */
+:root {
+  --bg-color: #ffffff;          /* Background color */
+  --text-color: #000000;        /* Text color */
+  --primary-color: #006666;     /* Accent/primary color */
+  --icon-filter: none;          /* Icon filter for light mode */
+  --gradient-white-bg2: linear-gradient(135deg, #fdfdfd, #e4e4e4);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Dark mode */
+[data-theme="dark"] {
+  --bg-color: #000;      /* Dark background */
+  --text-color: #fff;     /* Light text */
+  --primary-color: #006666;     /* Primary color (same or adjust) */
+  --icon-filter: invert(1) brightness(1.2);
+  --gradient-white-bg2: linear-gradient(135deg, #0f0f0f, #3a3a3a);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* === Global Styles === */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Links and buttons */
+a, button {
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* Container wrapper with max-width and horizontal padding */
+.app-wrapper {
+  max-width: 1300px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  display: block; /* Ensures block-level element */
+  overflow: hidden;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

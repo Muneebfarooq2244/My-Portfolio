@@ -1,0 +1,174 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  width: 100%;
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
+}
+
+.contact-info {
+  width: 48%;
+  padding: 1.5rem 2rem;
+  box-sizing: border-box;
+}
+
+.skills {
+  width: 48%;
+  padding: 1.5rem 2rem;
+  box-sizing: border-box;
+}
+
+.contact-info input,
+.contact-info form textarea {
+  width: 100%;
+  box-sizing: border-box; /* added for consistency */
+}
+
+.contact-info form input,
+.contact-info form textarea {
+  padding: 0.8rem 1rem; /* add horizontal padding for better input size */
+  border: 1px solid #e8e1e1;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+  font-size: 14px; /* consistent font size */
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.contact-info form .input-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 1%; /* added small gap between inputs */
+}
+
+.input-box input {
+  width: 49%;
+}
+
+form input:focus,
+form textarea:focus {
+  filter: brightness(100%);
+  background: #dfe7e7;
+  border: 1px solid #006666;
+}
+
+form textarea {
+  resize: none;
+  min-height: 150px; /* make textarea a bit taller like the screenshot */
+}
+
+form .btn {
+  padding: 15px 25px; /* slightly wider button */
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(90deg, #006666, #009191);
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+form .btn:hover {
+  background: linear-gradient(90deg, #009191, #006666);
+  color: #fff;
+}
+
+/* Optional: style for the section headings to match image */
+.contact-info .main-text h2.heading,
+.skills .main-text h2.heading {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.contact-info .main-text span,
+.skills .main-text span {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.skill-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+  gap: 30px;
+  justify-items: center;
+}
+.skill {
+  width: 150px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.outer-circle {
+  position: relative;
+  width: 150px;
+  height: 150px; /* adjusted height to be square */
+  margin: 0 auto;
+}
+
+.inner-circle {
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 28px;
+  user-select: none;
+}
+
+.counter {
+  font-size: 32px;
+  font-weight: 700;
+  margin: -125px;
+}
+
+.sk-title {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin-top: 22px;
+  margin-left: 15px;
+}
+
+.contact-info .main-text h2.heading,
+.skills .main-text h2.heading {
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 5px;
+  text-align: left;
+  font-family: "poppins";
+}
+.contact-info .main-text span,
+.skills .main-text span {
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: left;
+}
+
+
+@media (max-width: 800px) {
+  .contact-info,
+  .skills {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    box-sizing: border-box; /* ensure padding doesn't exceed width */
+  }
+  .skill-wrap {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: -40px;
+  }
+}

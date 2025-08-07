@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { ThemeProvider } from "./ThemeContext";
+import "./App.css";
+
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Homepage from "./components/homepage/Homepage";
+import ScrollToTopButton from "./components/ScrollToTopButton";
+
 
 function App() {
+  useEffect(() => {
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.classList.toggle('dark', prefersDark);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-wrapper">
+      <ThemeProvider>
+        <Header />
+        <Homepage/>
+        <ScrollToTopButton/>
+        <Footer/>
+      </ThemeProvider>
     </div>
   );
 }

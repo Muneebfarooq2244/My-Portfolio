@@ -1,0 +1,233 @@
+/*=======================
+  Theme Variables
+========================*/
+
+.dark-theme {
+  --bg-color: #3d3d3d;
+  --br-color: #fff;
+  --pg-color: #d8d8d8;
+}
+
+.light-theme {
+  --bg-color: #e5eef7;
+  --br-color: #000;
+  --pg-color: #636363;
+}
+
+/*=======================
+  Layout Styles
+========================*/
+
+.allServices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/*=======================
+  Service Item Styles
+========================*/
+
+.servicesItem {
+  background: var(--bg-color);
+  color: var(--br-color);
+  box-shadow: var(--box-shadow);
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: background 0.4s ease, color 0.3s ease;
+  border: solid;
+  border-width: 1px;
+  border-color: #006666;
+
+}
+
+.servicesItem:hover {
+  background: linear-gradient(200deg, #00a8a8 0%, #025555 51%, #0d2424 100%);
+  color: #fff;
+  transform: translateY(-20px);
+  box-shadow: 0px 0px 70px #006666;
+}
+
+.section-heading{
+  margin-top: 60px;
+}
+
+.servicesItem h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 20px;
+  font-family: poppins;
+  font-weight: 700;
+}
+
+.servicesItem p {
+  margin-bottom: 1.5rem;
+  font-size: 14px;
+  text-align: center;
+  color: var(--pg-color);
+  padding: 0%;
+}
+
+/*=======================
+  Icon Styles
+========================*/
+
+.icon-services {
+  display: inline-flex;
+  position: relative;
+}
+
+.service-icon {
+  background: var(--gradient-color-bg);
+  color: #fff;
+  font-size: 2.5rem;
+  width: 60px;
+  height: 60px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  transition: 0.4s;
+  z-index: 1;
+}
+
+.servicesItem:hover .service-icon {
+  outline: 1px solid var(--main-color);
+  transform: scale(1.2);
+}
+
+.icon-services span {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: -5px;
+  top: -5px;
+  background: var(--gradient-color-bg);
+  border-radius: 50%;
+  animation: animate 1s linear infinite;
+}
+
+/*=======================
+  Read More Button
+========================*/
+
+.readMore {
+  background: var(--readmore-bg);
+  color: var(--readmore-text);
+  box-shadow: var(--box-shadow);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/*=======================
+  Animation
+========================*/
+
+@keyframes animate {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+
+.tabs-section {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 80px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.nav-tabs {
+  justify-content: center;
+  border-bottom: none;
+}
+.nav-tabs .nav-link {
+  color:#006666;
+  border: 1px solid #006666;
+  margin: 10px;
+  padding:  12px;
+  border-radius: 0;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link.active {
+  background: linear-gradient(to left, #006666, #133333);
+  color: #fff;
+  border: 1px solid #006666;
+}
+
+.tab-content {
+  border-radius: 0 5px 5px 5px;
+  padding: 15px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+.tab-pane.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.tab-pane.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.tab-image {
+  max-width: 100%;
+  border-radius: 10px;
+  padding: 40px;
+}
+.tab-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #006666;
+}
+.tab-description {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.skills-list{
+  text-align: left;
+  padding: 0%;
+  font-size: 16px;
+}
+
+@media (max-width: 800px) {
+  .tab-content {
+    padding:  0%;
+  }
+  .tab-heading{
+    font-size: 26px;
+  }
+  .tab-description {
+    font-size: 15px;
+    padding: 0%;
+  }
+  .tab-image{
+    padding: 0%;
+    width: 100%;
+  }
+
+  .skills-list{
+    font-size: 14px;
+  }
+}
