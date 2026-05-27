@@ -241,7 +241,7 @@ section {
   content: "";
   position: absolute;
   inset: 20px;
-  background: #00aaff;
+  background: #fff;
   border-radius: 50%;
   z-index: 1;
 }
