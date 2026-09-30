@@ -1,22 +1,23 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+const base = process.env.PUBLIC_URL;
 
 const skills = [
-  { name: "HTML5", logo: "/skills/html5.png" },
-  { name: "CSS3", logo: "/skills/css3.png" },
-  { name: "JavaScript", logo: "/skills/javascript.png" },
-  { name: "React", logo: "/skills/react.png" },
-  { name: "Next.js", logo: "/skills/nextjs.png" },
-  { name: "PHP", logo: "/skills/php.png" },
-  { name: "Shopify", logo: "/skills/shopify.png" },
-  { name: "Wordpress", logo: "/skills/WordPress.png" },
-  { name: "TypeScript", logo: "/skills/typescript.png" },
-  { name: "Tailwind", logo: "/skills/tailwind.png" },
-  { name: "Bootstrap", logo: "/skills/bootstrap.png" },
-  { name: "Figma", logo: "/skills/figma.png" },
-  { name: "Photoshop", logo: "/skills/photoshop.png" },
-  { name: "Node.js", logo: "/skills/nodejs.png" },
-  { name: "MongoDB", logo: "/skills/mongodb.png" },
-  { name: "Git", logo: "/skills/git.png" },
+ { name: "HTML5", logo: `${base}/skills/html5.png` },
+  { name: "CSS3", logo: `${base}/skills/css3.png` },
+  { name: "JavaScript", logo: `${base}/skills/javascript.png` },
+  { name: "React", logo: `${base}/skills/react.png` },
+  { name: "Next.js", logo: `${base}/skills/nextjs.png` },
+  { name: "PHP", logo: `${base}/skills/php.png` },
+  { name: "Shopify", logo: `${base}/skills/shopify.png` },
+  { name: "Wordpress", logo: `${base}/skills/WordPress.png` },
+  { name: "TypeScript", logo: `${base}/skills/typescript.png` },
+  { name: "Tailwind", logo: `${base}/skills/tailwind.png` },
+  { name: "Bootstrap", logo: `${base}/skills/bootstrap.png` },
+  { name: "Figma", logo: `${base}/skills/figma.png` },
+  { name: "Photoshop", logo: `${base}/skills/photoshop.png` },
+  { name: "Node.js", logo: `${base}/skills/nodejs.png` },
+  { name: "MongoDB", logo: `${base}/skills/mongodb.png` },
+  { name: "Git", logo: `${base}/skills/git.png` },
 ];
 
 export default function TechStack() {
